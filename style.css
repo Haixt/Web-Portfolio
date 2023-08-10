@@ -202,72 +202,18 @@ nav ul li a:hover::after{
     background-color: #D71313;
     transform: translate(-10px);
 }
-/*---------Contact----------*/
-
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p {
-    margin-left: 30px;
-    font-weight: 800;
-    color: #FBEEAC;
-}
-.button{
-    background-color: #F4D160;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition: background 0.5s, transform 0.5s;
-}
-.button:hover{
-    background-color: #D71313;
-    transform: translate(-10px);
-}
-.contact-right  i{
+.container .contact-right i{
     display: flex;
     text-decoration: none;
-    text-align: end;
+    text-align: center;
     font-size: 100px;
-    padding: 10px 20px;
-    margin-top: 5vh;
-    margin-left: 70vh;
+    padding: 10px;
+    margin-top: 10vh;
+    margin-left: 50vh;
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     cursor: pointer;
-}
-.contact-right  i:hover{
-    background-color: #1D5D9B;
-    transform: translate(-10px);
-}
-.photo{
-    max-width: 50%;
-    max-height: 50%;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 60%;
-  }
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding:25px;
-    background-image: url(images/Black\ &\ White\ Minimalist\ Business\ Logo.png);
-    background: #1D5D9B;
-    font-weight: 900;
-    color: #000000;
-    margin-top: 20px;
-    transition: background 0.5s, transform 0.5s;
-}
-.copyright:hover{
-    background-color: #F4D160;
-    transform: translate(-10px);
 }
 
 /*-------------css for small screen------------*/
@@ -306,3 +252,36 @@ nav .fas{
         cursor: pointer;
     }
 }
+/* Media query for larger screens */
+@media screen and (min-width: 1200px) {
+    /* Adjust header height */
+    #header,
+    #about,
+    #portfolio,
+    #contact {
+      height: 200vh;
+    }
+  
+    /* Adjust container padding */
+    .container {
+      padding: 20px 15%;
+    }
+  
+    /* Adjust other styles as needed */
+    
+    /* Example adjustment for header text on larger screens */
+    .header-text {
+      margin-top: 10%;
+      font-size: 60px;
+    }
+  
+    /* Example adjustment for contact icons */
+    .contact-right i {
+      margin-left: 40vh;
+    }
+  
+    /* Example adjustment for portfolio project list */
+    .project-list {
+      grid-gap: 60px;
+    }
+  }
